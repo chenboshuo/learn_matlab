@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge,IE=9,chrome=1"><meta name="generator" content="MATLAB R2019a"><title>Untitled</title><style type="text/css">.rtcContent { padding: 30px; } .S0 { margin: 3px 10px 5px 4px; padding: 0px; line-height: 20px; min-height: 0px; white-space: pre-wrap; color: rgb(60, 60, 60); font-family: Helvetica, Arial, sans-serif; font-style: normal; font-size: 20px; font-weight: bold; text-align: left;  }
+.CodeBlock { background-color: #F7F7F7; margin: 10px 0 10px 0;}
+.S1 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 1px solid rgb(233, 233, 233); border-bottom: 0px none rgb(0, 0, 0); border-radius: 4px 4px 0px 0px; padding: 6px 45px 0px 13px; line-height: 17.2339992523193px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S2 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 0px none rgb(0, 0, 0); border-radius: 0px; padding: 0px 45px 0px 13px; line-height: 17.2339992523193px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S3 { border-left: 1px solid rgb(233, 233, 233); border-right: 1px solid rgb(233, 233, 233); border-top: 0px none rgb(0, 0, 0); border-bottom: 1px solid rgb(233, 233, 233); border-radius: 0px; padding: 0px 45px 4px 13px; line-height: 17.2339992523193px; min-height: 18px; white-space: nowrap; color: rgb(0, 0, 0); font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px;  }
+.S4 { color: rgb(64, 64, 64); padding: 10px 0px 6px 17px; background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box; font-family: Menlo, Monaco, Consolas, 'Courier New', monospace; font-size: 14px; overflow-x: hidden; line-height: 17.2339992523193px;  }</style></head><body><div class = rtcContent><h2  class = 'S0'><span>求极限</span></h2><div class="CodeBlock"><div class="inlineWrapper"><div  class = 'S1'><span style="white-space: pre;"><span>syms </span><span style="color: rgb(160, 32, 240);">n x</span><span>;</span></span></div></div><div class="inlineWrapper"><div  class = 'S2'><span style="white-space: pre;"><span>y = n*((1+x/n)^n - exp(x));</span></span></div></div><div class="inlineWrapper outputs"><div  class = 'S3'><span style="white-space: pre;"><span>limit(y,n,inf)</span></span></div><div  class = 'S4'><div class="symbolicElement"><div class="embeddedOutputsVariableElement">ans =&nbsp;</div><span class="MathEquation" mathmmlencoding="&amp;lt;math xmlns='http://www.w3.org/1998/Math/MathML' display='block' xmlns:mw='https://www.mathworks.com/MathML/extensions'&amp;gt;
+  &amp;lt;mrow mw:template='plus'&amp;gt;
+    &amp;lt;mo&amp;gt;-&amp;lt;/mo&amp;gt;
+    &amp;lt;mfrac mw:template='divide'&amp;gt;
+      &amp;lt;mrow mw:template='times'&amp;gt;
+        &amp;lt;msup mw:template='power'&amp;gt;
+          &amp;lt;mi&amp;gt;x&amp;lt;/mi&amp;gt;
+          &amp;lt;mn&amp;gt;2&amp;lt;/mn&amp;gt;
+        &amp;lt;/msup&amp;gt;
+        &amp;lt;mo form='infix'&amp;gt;&amp;amp;InvisibleTimes;&amp;lt;/mo&amp;gt;
+        &amp;lt;msup mw:template='exp'&amp;gt;
+          &amp;lt;mo&amp;gt;&amp;amp;ee;&amp;lt;/mo&amp;gt;
+          &amp;lt;mi&amp;gt;x&amp;lt;/mi&amp;gt;
+        &amp;lt;/msup&amp;gt;
+      &amp;lt;/mrow&amp;gt;
+      &amp;lt;mn&amp;gt;2&amp;lt;/mn&amp;gt;
+    &amp;lt;/mfrac&amp;gt;
+  &amp;lt;/mrow&amp;gt;
+&amp;lt;/math&amp;gt;
+" style="vertical-align: -15px;"><img src="data:image/png;base64,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" width="40.5" height="36"></span></div></div></div></div></div>
+<br>
+<!-- 
+##### SOURCE BEGIN #####
+%% 求极限
+
+syms n x;
+y = n*((1+x/n)^n - exp(x));
+limit(y,n,inf)
+##### SOURCE END #####
+--></body></html>
