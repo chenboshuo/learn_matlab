@@ -1,6 +1,6 @@
 x0 = [-5;5]
 [x,fval] = fsolve(@myfun,x0)
-% fval 接近0的数
+% fval 鎺ヨ繎0鐨勬暟
 
 % x =
 %

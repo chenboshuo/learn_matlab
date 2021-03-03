@@ -1,5 +1,5 @@
 function y = host(x)
-% º¯ÊýmÎÄ¼þ,function Òò±äÁ¿Ãû=º¯ÊýÃû(×Ô±äÁ¿Ãû)
-% ·ÀÖ¹Ìæ»»Ä¬ÈÏº¯ÊýÃû
+% å‡½æ•°mæ–‡ä»¶,function å› å˜é‡å=å‡½æ•°å(è‡ªå˜é‡å)
+% é˜²æ­¢æ›¿æ¢é»˜è®¤å‡½æ•°å
 y = 10*x
 end
